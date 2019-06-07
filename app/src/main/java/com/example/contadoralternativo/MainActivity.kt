@@ -29,12 +29,16 @@ class MainActivity : AppCompatActivity() {
 
             override fun onClick(v: View?) {
 
-
+                var entrada = entradaUsuario?.text.toString()
 
                 contadorNuevo +=1
-                texto?.append("usuario!!  boton se ha clickeado $contadorNuevo vez")
+                texto?.append("usuario $entrada  boton se ha clickeado $contadorNuevo vez")
 
-                Toast.makeText(this@MainActivity,"se clickeo el boton",Toast.LENGTH_SHORT).show()
+                if (contadorNuevo == 10 ){
+
+                    Toast.makeText(this@MainActivity,"Se clickeo el boton 10 veces",Toast.LENGTH_SHORT).show()
+                }
+
 
 
             }
