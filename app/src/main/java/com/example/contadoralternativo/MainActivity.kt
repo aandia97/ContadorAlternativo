@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
                 var entrada = entradaUsuario?.text.toString()
 
                 contadorNuevo +=1
-                texto?.append("usuario $entrada  boton se ha clickeado $contadorNuevo vez")
+                texto?.append("El usuario $entrada  clickeo el boton y se ha clickeado $contadorNuevo vez(veces) \n")
 
                 if (contadorNuevo == 10 ){
 
